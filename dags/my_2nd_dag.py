@@ -10,7 +10,7 @@ default_args = {
 }
 
 with DAG (
-    'my_1st_dag',
+    'my_2nd_dag',
     schedule_interval='* * * * *',
     default_args=default_args,
     start_date=timezone.datetime(2022, 9, 1),

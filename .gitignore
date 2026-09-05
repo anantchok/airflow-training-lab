@@ -1,0 +1,37 @@
+# Secret และ Environment
+.env
+.env.*
+!.env.example
+
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+
+# Airflow runtime
+logs/**
+!logs/.gitkeep
+airflow.db
+*.pid
+
+# ข้อมูลต้นทางและผลลัพธ์
+data/input/
+data/staging/
+data/output/
+data/agent/
+
+# ข้อมูล MRA
+*.xlsb
+ResultMRauditJCIHA.xlsx
+agentic_etl_output*
+rejected_records.csv
+quality_report.json
+agent_payload.json
+
+# ไฟล์สำรอง
+dags_backup_*/
+docker-compose.backup.yaml
+docker-compose-original.yaml
+
+# Notebook temporary files
+.ipynb_checkpoints/
